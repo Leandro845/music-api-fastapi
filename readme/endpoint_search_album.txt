@@ -1,0 +1,59 @@
+# Retrieving Band Album Information with FastAPI and MusicBrainzNGS
+
+## English
+
+This README describes a FastAPI endpoint that retrieves information about a specific album by a music band from the MusicBrainz database based on the band's name and the album's title.
+
+### Endpoint Functionality
+
+The provided FastAPI endpoint is configured to handle GET requests at `/{band_name}/{album}`, where:
+- `band_name` is a path parameter representing the name of the band.
+- `album` is a path parameter representing the title of the album you want to search for.
+
+### Installation and Setup
+
+Before using this endpoint, ensure that you have installed FastAPI and MusicBrainzNGS as described in the [previous setup guide](#setting-up-fastapi-with-musicbrainzngs).
+
+### Usage
+
+To use this endpoint, follow these steps:
+
+1. Start your FastAPI application (e.g., `uvicorn main:app --reload` assuming `main.py` is your main Python file).
+2. Make a GET request to `/{band_name}/{album}`, replacing `band_name` with the name of the band and `album` with the title of the album you want to search for.
+
+The endpoint will query the MusicBrainz database using the provided band name and album title and return the search results in JSON format.
+
+Example:
+- If you make a GET request to `/metallica/master of puppets`, the endpoint will search for the album titled "Master of Puppets" by the band "Metallica" on MusicBrainz and return the JSON response containing information about the album.
+
+
+
+
+
+
+
+## Português
+
+Este README descreve um endpoint do FastAPI que obtém informações sobre um álbum específico de uma banda de música a partir do banco de dados do MusicBrainz com base no nome da banda e no título do álbum.
+
+### Funcionalidade do Endpoint
+
+O endpoint fornecido pelo FastAPI está configurado para lidar com requisições GET em `/{band_name}/{album}`, onde:
+- `band_name` é um parâmetro de caminho que representa o nome da banda.
+- `album` é um parâmetro de caminho que representa o título do álbum que você deseja pesquisar.
+
+### Instalação e Configuração
+
+Antes de usar este endpoint, certifique-se de ter instalado o FastAPI e o MusicBrainzNGS conforme descrito no [guia de configuração anterior](#configurando-o-fastapi-com-o-musicbrainzngs).
+
+### Uso
+
+Para utilizar este endpoint, siga estes passos:
+
+1. Inicie a sua aplicação FastAPI (por exemplo, `uvicorn main:app --reload` assumindo que `main.py` é o seu arquivo Python principal).
+2. Faça uma requisição GET para `/{band_name}/{album}`, onde `band_name` é substituído pelo nome da banda e `album` é substituído pelo título do álbum que você deseja pesquisar.
+
+O endpoint irá consultar o banco de dados do MusicBrainz utilizando o nome da banda e o título do álbum fornecidos e retornará os resultados da busca no formato JSON.
+
+Exemplo:
+- Se você fizer uma requisição GET para `/metallica/master of puppets`, o endpoint irá pesquisar pelo álbum intitulado "Master of Puppets" da banda "Metallica" no MusicBrainz e retornará a resposta JSON contendo informações sobre o álbum.

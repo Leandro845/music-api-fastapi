@@ -1,0 +1,28 @@
+# Setting Up FastAPI with MusicBrainzNGS
+
+This guide provides instructions on setting up a FastAPI application integrated with MusicBrainzNGS to access music-related data.
+
+## Installation
+
+Make sure you have Python installed on your system. You can then install FastAPI and MusicBrainzNGS using pip:
+
+```bash
+pip install fastapi
+pip install musicbrainzngs
+
+
+
+# Em portugues
+
+
+# Configurando o FastAPI com o MusicBrainzNGS
+
+Este guia fornece instruções sobre como configurar uma aplicação FastAPI integrada com o MusicBrainzNGS para acessar dados relacionados à música.
+
+## Instalação
+
+ertifique-se de que o Python está instalado no seu sistema. Em seguida, você pode instalar o FastAPI e o MusicBrainzNGS usando o pip:
+
+```bash
+pip install fastapi
+pip install musicbrainzngs
